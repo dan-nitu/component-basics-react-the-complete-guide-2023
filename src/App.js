@@ -1,7 +1,6 @@
 import TheHeader from './components/UI/TheHeader';
 import Concepts from './components/concepts/Concepts';
 
-import keyConceptsImage from './assets/images/key-concepts.png';
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
@@ -30,7 +29,7 @@ const concepts = [
 function App() {
   return (
     <>
-      <TheHeader keyConceptsImage={keyConceptsImage} />
+      <TheHeader />
 
       <Concepts concepts={concepts} />
     </>

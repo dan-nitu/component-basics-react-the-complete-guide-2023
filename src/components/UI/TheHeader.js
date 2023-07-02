@@ -1,4 +1,6 @@
-const TheHeader = ({ keyConceptsImage }) => {
+import keyConceptsImage from '../../assets/images/key-concepts.png';
+
+const TheHeader = () => {
   return (
     <header>
       <img src={keyConceptsImage} alt='Medal badge with a star' />
