@@ -1,3 +1,5 @@
+import Concepts from './components/concepts/Concepts';
+
 import keyConceptsImage from './assets/images/key-concepts.png';
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
@@ -32,15 +34,8 @@ function App() {
         <h1>Key React Concepts</h1>
         <p>Selected key React concepts you should know about</p>
       </header>
-      <ul id='concepts'>
-        {concepts.map((concept) => (
-          <li className='concept'>
-            <img src={concept.image} alt={concept.title} />
-            <h2>{concept.title}</h2>
-            <p>{concept.description}</p>
-          </li>
-        ))}
-      </ul>
+
+      <Concepts concepts={concepts} />
     </div>
   );
 }
